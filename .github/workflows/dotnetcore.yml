@@ -18,7 +18,7 @@ jobs:
       #with:
         #dotnet-version: 4.6.1
     - name: Add System.Resources.Extensions
-      run: dotnet add src/SQLQueryStress.sln package System.Resources.Extensions --version 4.7.0
+      run: dotnet add src/SQLQueryStress/SQLQueryStress.csproj package System.Resources.Extensions --version 4.7.0
     - name: Install dependencies
       run: dotnet restore src/SQLQueryStress.sln
     - name: Build
